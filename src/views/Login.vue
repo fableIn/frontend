@@ -1,22 +1,22 @@
 <template>
   <div style="text-align: center; margin-top: 50px;">
-    <h1>Страница авторизации</h1>
+    <h1>Sign In</h1>
     <form @submit.prevent="handleLogin">
       <div>
         <label for="email">Email:</label>
         <input type="email" id="email" v-model="form.email" required />
       </div>
       <div>
-        <label for="password">Пароль:</label>
+        <label for="password">Password:</label>
         <input type="password" id="password" v-model="form.password" required />
       </div>
-      <button type="submit">Войти</button>
+      <button type="submit">sign in</button>
     </form>
     <!-- Новая кнопка-переход -->
     <p style="margin-top: 20px;">
-      Нет аккаунта? 
+      Don't have account? 
       <router-link to="/register">
-        <button>Зарегистрироваться</button>
+        <button>sign up</button>
       </router-link>
     </p>
   </div>

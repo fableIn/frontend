@@ -1,8 +1,8 @@
 <template>
   <div style="text-align: center; margin-top: 50px;">
-    <h1>Добро пожаловать, {{ user.username }}!</h1>
+    <h1>Welcome, {{ user.username }}!</h1>
     <p>Email: {{ user.email }}</p>
-    <button @click="logout">Выйти</button>
+    <button @click="logout">sign out</button>
   </div>
 </template>
 

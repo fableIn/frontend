@@ -19,7 +19,7 @@ async function request(path, options = {}) {
 export function login(email, password) {
   // OAuth2PasswordRequestForm ждет поле username=email
   const body = new URLSearchParams({ username: email, password });
-  return fetch(`${API_URL}/token`, {
+  return fetch(`${API_URL}/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body,
